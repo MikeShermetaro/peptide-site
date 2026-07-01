@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Peptide Dosage Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="dash0-rum.js"></script>
+  <script src="https://unpkg.com/@dash0/sdk-web@0.18.1/dist/dash0.iife.js" defer crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site">
+    <a class="brand" href="index.html">Peptide Dosage Demo</a>
+    <nav>
+      <a href="single-peptides.html">Single Peptides</a>
+      <a href="blends.html">Blends</a>
+      <a href="calculator.html">Calculator</a>
+    </nav>
+  </header>
+  <main><section class="hero">
+      <h1>Practical Peptide Dosage Reference</h1>
+      <p>A demo library of research-peptide protocols with a built-in reconstitution calculator. This public site is monitored with Dash0 real-user monitoring and synthetic checks.</p>
+      <div class="cta">
+        <a class="btn" href="single-peptides.html">Browse Single Peptides</a>
+        <a class="btn ghost" href="blends.html">Browse Blends</a>
+      </div>
+    </section>
+    <section><h2>Featured Protocols</h2><div class="tiles"><a class="tile" href="protocol-retatrutide.html">
+    <h3>Retatrutide</h3>
+    <span class="pill">GLP-1 / GIP / glucagon triple agonist</span>
+    <p>Retatrutide is an investigational triple agonist targeting the GLP-1, GIP, and glucagon receptors. Adding glucagon-recep&hellip;</p>
+    <span class="meta">20 mg vial &middot; Once weekly, subcutaneous</span>
+  </a><a class="tile" href="protocol-bpc-tb-blend.html">
+    <h3>BPC-157 + TB-500 20mg Blend</h3>
+    <span class="pill">Recovery blend (two tissue-support peptides)</span>
+    <p>This blend combines BPC-157 and TB-500 in a single 20 mg vial, a common pairing in recovery-oriented research because th&hellip;</p>
+    <span class="meta">20 mg vial &middot; Once daily, subcutaneous</span>
+  </a><a class="tile" href="protocol-5-amino-1mq.html">
+    <h3>5-Amino-1MQ</h3>
+    <span class="pill">NNMT inhibitor (small molecule)</span>
+    <p>5-Amino-1MQ is a small, cell-permeable molecule studied as a selective inhibitor of the enzyme NNMT (nicotinamide N-meth&hellip;</p>
+    <span class="meta">10 mg vial &middot; Once or twice daily, subcutaneous</span>
+  </a></div></section>
+    <section class="card"><h2>Reconstitution Calculator</h2><div id="calc-mount"></div></section></main>
+  <footer class="site">
+    Demo/educational use only. Dosing figures are illustrative and computed for demonstration; not medical guidance.
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
