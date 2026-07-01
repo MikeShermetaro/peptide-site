@@ -17,8 +17,9 @@
 dash0("init", {
   serviceName: "peptide-site",
   endpoint: {
-    // us-west-2 region, RUM traces path:
-    url: "https://ingress.us-west-2.aws.dash0.com/v1/traces",
+    // us-west-2 region BASE endpoint — the SDK appends /v1/traces, /v1/logs itself.
+    // Do NOT add a path here or you get a doubled path and 404s.
+    url: "https://ingress.us-west-2.aws.dash0.com",
     authToken: "auth_HFQKTqkgSRfASSoAU1DBdmTWAaVK5dEV", // ingest-only website token
   },
   additionalSignalAttributes: {
