@@ -31,11 +31,6 @@
       `Concentration: ${concentration.toFixed(1)} mcg/mL\n` +
       `Injection volume: ${volumeMl.toFixed(3)} mL (${(volumeMl * 100).toFixed(1)} units on a U-100 syringe)\n` +
       `Total doses per vial: ${totalDoses.toFixed(1)}`;
-
-    // Optional: report a custom event to Dash0 RUM if the SDK is present.
-    if (window.dash0) {
-      try { window.dash0("sendEvent", { name: "calculation.performed", attributes: { "peptide.dose_mcg": doseMcg } }); } catch (e) {}
-    }
   }
 
   document.getElementById("calcBtn").addEventListener("click", calculate);
